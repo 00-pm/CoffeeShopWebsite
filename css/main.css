@@ -1,6 +1,7 @@
 /* Start Variables */
 :root {
-    --main-color: #333;;
+    --main-color: #333;
+    --hover-color: #c7a17a;
 }
 /* End Varialbes */
 
@@ -136,6 +137,7 @@ header .container .more-links i{
 }
 
 header .container nav ul li a {
+    padding: 10px;
     text-decoration: none;
     color: var(--main-color, #333);
     font-style: normal;
@@ -148,9 +150,9 @@ header .container .more-links{
     font-size: 20px;
     color: var(--main-color, #333);
 }
-/* header .container .links {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-} */
+
+header .container nav ul li a:hover,
+header .container .more-links i:hover {
+    color: var(--hover-color, #c7a17a);
+}
 /* End Header Style */
