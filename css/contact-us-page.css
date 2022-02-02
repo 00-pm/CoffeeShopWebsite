@@ -1,4 +1,38 @@
-ul{
+header nav ul {
     display: flex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    padding: 0;
+    justify-content: space-evenly;
+    background-color: brown;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    padding:2px 0;
+}
+header nav ul li {
+    background-color: antiquewhite;
+    cursor: pointer;
+    border-radius:5px;
+    padding: 3px;
+}
+header{
+    width: 100%;
+    position: relative ;
+}
+header nav{
+    width: 100%;
+    position: fixed;
+    /* scroll-behavior:smooth; */
+}
+body {
+    font-family:monospace;
+    height: 1000px;
+    
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+p{
+    margin: 0;
 }
