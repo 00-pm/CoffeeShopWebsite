@@ -91,13 +91,19 @@ header div.container .more-options {
     padding-left: 50px;
     color: blue;
 } */
+header {
+    position: fixed;
+}
 header .container .logo {
+    position: relative;
     padding: 0px;
     margin: 0px;
 }
-header .container .logo img {
 
+header .container .logo img {
+    width: 100px;
 }
+
 header .container {
     display: flex;
     justify-content: space-between;
@@ -108,6 +114,7 @@ header .container .more-links{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: -15px;
 }
 
 header .container nav ul {
