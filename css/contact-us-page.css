@@ -4,7 +4,7 @@ header nav ul {
     padding: 0;
     justify-content: space-evenly;
     background-color: brown;
-    width: 90%;
+    width: 80%;
     margin: auto;
     border-radius: 5px;
     padding:2px 0;
@@ -34,5 +34,10 @@ a{
     color: unset;
 }
 p{
+    margin: 0;
+}
+header nav .nav-logo {
+    height: 5%;
+    width: 15%;
     margin: 0;
 }
