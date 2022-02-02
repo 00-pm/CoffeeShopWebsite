@@ -1,6 +1,6 @@
 /* Start Variables */
 :root {
-    --main-color: orange;
+    --main-color: #333;;
 }
 /* End Varialbes */
 
@@ -13,7 +13,8 @@
 }
 
 body {
-    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
+    font-family: "Open Sans", sans-serif;
 }
 
 /* End Global Rules */
@@ -44,7 +45,102 @@ body {
 /* Large */
 @media (min-width: 1200px) {
     .container {
-        width: 1970px;
+        width: 1170px;
     }
     
 }
+
+
+/* Start Header Style */
+header {
+    padding: 24.61px 0px;
+
+}
+/* 
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div.container h1 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: bold;
+    color: rgb(24, 23, 23);
+}
+
+header div.container div.links ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div.container div.links ul li {
+    padding-left: 10px;
+}
+
+header div.container div.links ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header div.container .more-options {
+    padding-left: 50px;
+    color: blue;
+} */
+header .container .logo {
+    padding: 0px;
+    margin: 0px;
+}
+header .container .logo img {
+
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container nav,
+header .container .more-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container nav ul li,
+header .container .more-links i{
+    line-height: 1.6;
+    margin: 0 14px;
+}
+
+header .container nav ul li a {
+    text-decoration: none;
+    color: var(--main-color, #333);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+header .container .more-links{
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--main-color, #333);
+}
+/* header .container .links {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+} */
+/* End Header Style */
