@@ -1,15 +1,23 @@
 :root {
-    --main-color: #333;
+    --bs-primary: #925107;
+    --secondary: #d6872c;
+}
+::-webkit-scrollbar {
+    width:10px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+::-webkit-scrollbar-thumb {
+    background-color:rgba(107, 107, 107, 0.582); 
+    border-radius: 5px;
+}
 
 body {
     font-family: 'Fredoka', sans-serif;
+    overflow:-moz-hidden-unscrollable;
+    overflow: overlay;
 }
-
 header {
-    background-image: linear-gradient(to bottom, rgb(184, 107, 6), #da9f5bd2);
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), var(--bs-primary));
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -17,24 +25,32 @@ header {
 
 /* Carousel base class */
 .carousel {
-    height: 100%;
+    position: relative;
 }
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
 .carousel-item {
-    height:100vh;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
 }
-
-.carousel-item>img {
-    position: absolute;
+.carousel-inner {
+position: relative;
+width: 100%;
+overflow:hidden;
+}
+.carousel-caption {
     top: 0;
     left: 0;
-    min-width: 100%;
-    height: 32rem;
+    right: 0;
+    bottom: 0;
+    background: rgba(51,33,29,0.7);
+    z-index: 1;
+}
+.dropdown-menu{
+    background: rgba(51,33,29,0.7);
+}
+#browncaps {
+    color: rgb(226, 159, 77) !important;
 }

@@ -1,0 +1,99 @@
+:root{
+    --bs-primary: #925107;
+    --secondary: #d6872c;
+}
+* {
+    box-sizing: border-box;
+}
+::selection{
+    color: white;
+    background-color: #925107;
+}
+body{
+    background: var(--secondary)
+}
+.menu .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.menu .container .menu-title{
+    text-align: center;
+    
+}
+
+.menu .container h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.menu .container i {
+    color: var(--bs-primary);
+    font-size: 1.5rem;
+}
+
+.menu .container span:nth-of-type(1),
+.menu .container span:nth-of-type(2) {
+    display: inline-block;
+    width: 5rem;
+    height: 1px;
+    background-color: var(--bs-primary);
+}
+
+.menu .container .menu-items .menu-item img {
+    width: 4rem;
+}
+
+.menu .container .menu-items {
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu .container .menu-items .menu-item {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap ;
+}
+
+.menu .container .menu-items .menu-item p {
+    font-size: small;
+    text-indent: 1rem;
+    margin: 0;
+}
+.menu .container .menu-items .menu-item h3 {
+    margin: 0;
+}
+
+.menu .container .menu-items .menu-item .coffee-desc {
+    width: 60%;
+}
+/* Small */
+@media (min-width: 768px) {
+    .menu .container .menu-items .menu-item {
+        width: 100%;
+    }
+
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .menu .container .menu-items .menu-item {
+        width: 33,33%;
+    }
+
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .menu .container .menu-items .menu-item {
+        width: 50%;
+    }
+
+}
+

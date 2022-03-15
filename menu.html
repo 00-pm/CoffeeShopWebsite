@@ -15,6 +15,8 @@
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <!-- The Main CSS File -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- The Menu Css File -->
+    <link rel="stylesheet" href="css/menu-style.css">
     <!-- Font Awesome Library -->
     <link rel="stylesheet" href="css/all.min.css">
 </head>
@@ -58,47 +60,87 @@
         </nav>
     </header>
     <!-- End header -->
-    <!-- start carousel -->
-    <div>
-        <div id="blog-carousel" class="carousel slide " data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="imgs/slide1.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="text-secondary font-weight-medium m-0">We Have Been Serving</h2>
-                        <h1 class="display-2 text-white m-0">COFFEE</h1>
-                        <h2 class="text-secondary m-0">SINCE 1950</h2>
+
+    <!-- Start Menu -->
+    <section class="menu">
+        <div class="container">
+            <h2>Our Favourite Menu</h2>
+            <div class="menu-title">
+                <span></span>
+                <i class="fa-solid fa-mug-hot"></i>
+                <span></span>
+            </div>
+
+            <div class="menu-items">
+                <div class="menu-item">
+                    <div class="coffee-img"><img src="imgs/item1.png" alt="coffee-cup"></div>
+                    <div class="coffee-desc">
+                        <h4 class="coffee-name">Cafe Late</h4>
+                        <p class="coffee-details">espresso,milk,foam</p>
                     </div>
+                    <h4 class="coffee-price">$20.5</h4>
                 </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="imgs/slide2.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="text-white text-capitalize font-weight-medium m-0">We offers the best</h2>
-                        <h2 class="text-white text-capitalize m-0">quality</h2>
-                        <h1 class="display-1 text-secondary m-0">COFFEE</h1>
+                <div class="menu-item">
+                    <div class="coffee-img"><img src="imgs/item2.png" alt="coffee-cup"></div>
+                    <div class="coffee-desc">
+                        <h4 class="coffee-name">Cafe Late</h4>
+                        <p class="coffee-details">espresso,milk,foam</p>
                     </div>
+                    <h4 class="coffee-price">$12.5</h4>
                 </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="imgs/slide3.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="text-secondary text-capitalize font-weight-medium m-0">When we make our clients</h2>
-                        <h1 class="display-1 text-white text-capitalize m-0">SMILE</h1>
-                        <h2 class="text-capitalize text-secondary">that's real success</h2>
+                
+                <div class="menu-item">
+                    <div class="coffee-img"><img src="imgs/item7.png" alt="coffee-cup"></div>
+                    <div class="coffee-desc">
+                        <h4 class="coffee-name">Black Coffee</h4>
+                        <p class="coffee-details">espresso,milk,foam</p>
                     </div>
+                    <h4 class="coffee-price">$14.5</h4>
+                </div>
+                <div class="menu-item">
+                    <div class="coffee-img"><img src="imgs/item2.png" alt="coffee-cup"></div>
+                    <div class="coffee-desc">
+                        <h4 class="coffee-name">Black Coffee</h4>
+                        <p class="coffee-details">espresso,milk,foam</p>
+                    </div>
+                    <h4 class="coffee-price">$14.5</h4>
+                </div>
+                <div class="menu-item">
+                    <div class="coffee-img"><img src="imgs/item3.png" alt="coffee-cup"></div>
+                    <div class="coffee-desc">
+                        <h4 class="coffee-name">Mocha</h4>
+                        <p class="coffee-details">espresso,milk,foam</p>
+                    </div>
+                    <h4 class="coffee-price">$25.5</h4>
+                </div>
+                <div class="menu-item">
+                    <div class="coffee-img"><img src="imgs/item1.png" alt="coffee-cup"></div>
+                    <div class="coffee-desc">
+                        <h4 class="coffee-name">Mocha</h4>
+                        <p class="coffee-details">espresso,milk,foam</p>
+                    </div>
+                    <h4 class="coffee-price">$15.5</h4>
+                </div>
+                <div class="menu-item">
+                    <div class="coffee-img"><img src="imgs/item7.png" alt="coffee-cup"></div>
+                    <div class="coffee-desc">
+                        <h4 class="coffee-name">Americano</h4>
+                        <p class="coffee-details">espresso,milk,foam</p>
+                    </div>
+                    <h4 class="coffee-price">$14.5</h4>
+                </div>
+                <div class="menu-item">
+                    <div class="coffee-img"><img src="imgs/item1.png" alt="coffee-cup"></div>
+                    <div class="coffee-desc">
+                        <h4 class="coffee-name">Americano</h4>
+                        <p class="coffee-details">espresso,milk,foam</p>
+                    </div>
+                    <h4 class="coffee-price">$18.5</h4>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#blog-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#blog-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-    </div>
-    <!-- end carousel -->
-    <!-- start footer -->
+    </section>
+    <!-- End Menu -->
     <footer class="text-white text-center text-lg-start" style="background-color: #925107;">
         <!-- Grid container -->
         <div class="container p-4">
@@ -192,7 +234,6 @@
         </div>
         <!-- Copyright -->
     </footer>
-    <!-- end footer  -->
 </body>
 
 </html>
