@@ -1,0 +1,12 @@
+body {
+    /* background-color: brown; */
+}
+.user-photo {
+    width: 120px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#testimonial-slider {
+    border-radius: 10px;
+}

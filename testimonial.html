@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Mc Cafe</title>
+    <!-- icon -->
+    <link rel="icon" href="imgs/cafe.ico">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- The Main CSS File -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- testimonial css -->
+    <link rel="stylesheet" href="css/testimoial.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light ">
+            <div class="container-sm p-3">
+                <a href="index.html"><img src="imgs/McCaflogo.svg" height="40vh"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#colapsednav"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="colapsednav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item px-2">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="menu.html" class="nav-link">Menu</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="#" class="nav-link">Reserve</a>
+                        </li>
+                        <li class="nav-item px-2 dropdown">
+                            <a class="nav-link dropdown-toggle-split" href="#" id="MoreDropDown"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                                aria-labelledby="MoreDropDown">
+                                <li><a class="dropdown-item" href="#">Testimonial</a></li>
+                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="#aboutus">About Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Carousel -->
+    <section id="testimonial-slider" class="bg-secondary py-5 w-75 mx-auto my-4">
+        <div class="container">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="col-sm-8 mx-auto">
+                    <div class="carousel-inner text-center text-white py-5">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="user-photo shadow">
+                                <img src="/imgs/person1.jpeg" class="img-fluid" alt="testimonial slider">
+                            </div>
+                            <div class="slider-caption mt-3">
+                                <p class="fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <figcaption class="blockquote-footer mt-3 text-white fs-5"><cite>Gurdeep Dahiya</cite></figcaption>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <div class="user-photo shadow">
+                                <img src="/imgs/person2.jpeg" class="img-fluid" alt="testimonial slider">
+                            </div>
+                            <div class="slider-caption mt-3">
+                                <p class="fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <figcaption class="blockquote-footer mt-3 text-white fs-5"><cite>Rajnish Kumar</cite></figcaption>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <div class="user-photo shadow">
+                                <img src="/imgs/person3.jpeg" class="img-fluid" alt="testimonial slider">
+                            </div>
+                            <div class="slider-caption mt-3">
+                                <p class="fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <figcaption class="blockquote-footer mt-3 text-white fs-5"><cite>Pardeep Dahiya</cite></figcaption>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Carousel -->
+    <footer class="text-white text-center text-lg-start" style="background-color: #925107;">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4" id="aboutus">About company</h5>
+
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        voluptatum deleniti atque corrupti.
+                    </p>
+
+                    <p>
+                        Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                        molestias.
+                    </p>
+
+                    <div class="mt-4">
+                        <!-- Facebook -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <!-- Dribbble -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+                        <!-- Twitter -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+                        <!-- Google + -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                                class="fab fa-google-plus-g"></i></a>
+                        <!-- Linkedin -->
+                    </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+                    <ul class="fa-ul" style="margin-left: 1.65em;">
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Safi, Merrakech-Safi 46000,
+                                MA</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                                class="ms-2">Mccafe@cafe.com</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 212 23 567
+                                88</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 212 34 567
+                                89</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Opening hours</h5>
+
+                    <table class="table text-center text-white">
+                        <tbody class="font-weight-normal">
+                            <tr>
+                                <td>Mon - Thu:</td>
+                                <td>8am - 9pm</td>
+                            </tr>
+                            <tr>
+                                <td>Fri - Sat:</td>
+                                <td>8am - 1am</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday:</td>
+                                <td>9am - 10pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="index.html">Mc Cafe</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>

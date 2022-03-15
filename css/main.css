@@ -5,13 +5,18 @@
 ::-webkit-scrollbar {
     width:10px;
 }
-
+::selection{
+    color: white;
+    background-color: #925107;
+}
 ::-webkit-scrollbar-thumb {
     background-color:rgba(107, 107, 107, 0.582); 
     border-radius: 5px;
 }
 
 body {
+    background: url(../imgs/woodbg.png);
+    
     font-family: 'Fredoka', sans-serif;
     overflow:-moz-hidden-unscrollable;
     overflow: overlay;
