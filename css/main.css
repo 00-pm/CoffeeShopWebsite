@@ -53,9 +53,11 @@ overflow:hidden;
     background: rgba(51,33,29,0.7);
     z-index: 1;
 }
+/* costumize drop down */
 .dropdown-menu{
     background: rgba(51,33,29,0.7);
 }
-#browncaps {
-    color: rgb(226, 159, 77) !important;
+
+.dropdown-menu .dropdown-item:active{
+    background-color: var(--secondary);
 }

@@ -39,7 +39,7 @@
                             <a href="menu.html" class="nav-link">Menu</a>
                         </li>
                         <li class="nav-item px-2">
-                            <a href="#" class="nav-link">Reserve</a>
+                            <a href="reservation.html" class="nav-link">Reserve</a>
                         </li>
                         <li class="nav-item px-2 dropdown">
                             <a class="nav-link dropdown-toggle-split" href="#" id="MoreDropDown"
@@ -48,8 +48,8 @@
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
                                 aria-labelledby="MoreDropDown">
-                                <li><a class="dropdown-item" href="#">Testimonial</a></li>
-                                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="testimonial.html">Testimonial</a></li>
+                                <li><a class="dropdown-item" href="contact-us-page.html">Contact Us</a></li>
                                 <li><a class="dropdown-item" href="#aboutus">About Us</a></li>
                             </ul>
                         </li>
@@ -59,56 +59,65 @@
         </nav>
     </header>
     <!-- Carousel -->
-    <section id="testimonial-slider" class="bg-secondary py-5 w-75 mx-auto my-4">
-        <div class="container">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="col-sm-8 mx-auto">
-                    <div class="carousel-inner text-center text-white py-5">
-                        <div class="carousel-item active" data-bs-interval="10000">
-                            <div class="user-photo shadow">
-                                <img src="/imgs/person1.jpeg" class="img-fluid" alt="testimonial slider">
+    <div class="container-fluid bg-black bg-opacity-50 pb-5">
+            <div class="title-section container-fluid py-3 w-50 text-center">
+                <h2 class="text-secondary">Testimonial</h2>
+                <span style="width: 8vw;"></span>
+                <i class="fa-solid fa-mug-hot text-secondary"></i>
+                <span style="width: 8vw;"></span>
+                <h1 class="text-white fa-5x">Our <cite class="text-warning fst-normal">Clients</cite> Says</h1>
+            </div>
+        <section id="testimonial-slider" class="bg-secondary w-75 mx-auto m-0 ">
+            <div class="container">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="col-sm-8 mx-auto">
+                        <div class="carousel-inner text-center text-white py-5">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="user-photo shadow">
+                                    <img src="imgs/person1.jpeg" class="img-fluid" alt="testimonial slider">
+                                </div>
+                                <div class="slider-caption mt-3">
+                                    <p class="fs-5">This is my favourite coffee shop when I'm in Ubud. Freshly roasted coffee they can make with their own home made coconut milk if you want. Lovely staff, very friendly and helpful. You can get non coffee drinks too.</p>
+                                    <figcaption class="blockquote-footer mt-3 text-white fs-5"><cite>Ayoub Bougmla</cite></figcaption>
+                                </div>
                             </div>
-                            <div class="slider-caption mt-3">
-                                <p class="fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <figcaption class="blockquote-footer mt-3 text-white fs-5"><cite>Gurdeep Dahiya</cite></figcaption>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <div class="user-photo shadow">
+                                    <img src="imgs/person2.jpeg" class="img-fluid" alt="testimonial slider">
+                                </div>
+                                <div class="slider-caption mt-3">
+                                    <p class="fs-5">The first coffee shop that I visited during my stay and I kept going back. The staff was so welcoming and the prices for coffee are amazing. There is Wifi and lovely seating. It is a great coffee shops to meet new people in, as well it is very central in Ubud. The coolest thing was the Latte art that surprised me when I ordered. There was a Pirate in my Latte....so unique.</p>
+                                    <figcaption class="blockquote-footer mt-3 text-white fs-5"><cite>Houssam Jebbar</cite></figcaption>
+                                </div>
                             </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="10000">
-                            <div class="user-photo shadow">
-                                <img src="/imgs/person2.jpeg" class="img-fluid" alt="testimonial slider">
-                            </div>
-                            <div class="slider-caption mt-3">
-                                <p class="fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <figcaption class="blockquote-footer mt-3 text-white fs-5"><cite>Rajnish Kumar</cite></figcaption>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="10000">
-                            <div class="user-photo shadow">
-                                <img src="/imgs/person3.jpeg" class="img-fluid" alt="testimonial slider">
-                            </div>
-                            <div class="slider-caption mt-3">
-                                <p class="fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                <figcaption class="blockquote-footer mt-3 text-white fs-5"><cite>Pardeep Dahiya</cite></figcaption>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <div class="user-photo shadow">
+                                    <img src="imgs/person3.jpeg" class="img-fluid" alt="testimonial slider">
+                                </div>
+                                <div class="slider-caption mt-3">
+                                    <p class="fs-5">Friendly service, awesome coffee and really good price we have ordered double espresso and chocolate milkshake and it was only $5</p>
+                                    <figcaption class="blockquote-footer mt-3 text-white fs-5"><cite>Sahl Ibrahimi</cite></figcaption>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                </button>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <!-- Carousel -->
     <footer class="text-white text-center text-lg-start" style="background-color: #925107;">
         <!-- Grid container -->
@@ -155,7 +164,7 @@
                         </li>
                         <li class="mb-3">
                             <span class="fa-li"><i class="fas fa-envelope"></i></span><span
-                                class="ms-2">Mccafe@cafe.com</span>
+                                class="ms-2">Mccafe@safi.ma</span>
                         </li>
                         <li class="mb-3">
                             <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 212 23 567

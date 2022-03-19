@@ -1,0 +1,161 @@
+/* Start Glbal Values  */
+
+:root {
+    --bs-primary: #925107;
+    --secondary: #d6872c;
+}
+
+::placeholder {
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* End Glbal Values  */
+
+/* Start  contact  */
+
+.contact .container {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contact .container .contact-title {
+    text-align: center;
+
+}
+
+.contact .container h2 {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.contact .container i {
+    color: var(--secondary);
+    font-size: 1.5rem;
+}
+
+.contact .container span:nth-of-type(1),
+.contact .container span:nth-of-type(2) {
+    display: inline-block;
+    width: 5rem;
+    height: 1px;
+    background-color: var(--bs-primary);
+}
+/* ------------------------------------- */
+.contact .container .client-contact {
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact .container .client-contact .left-coffee {
+    position: relative;
+    /* border: red solid 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    /* width: 50%; */
+    height: 100%;
+
+}
+
+.contact .container .client-contact .left-coffee img {
+    width: 300px;
+}
+
+.contact .container .client-contact form {
+    /* border: rgb(0, 255, 191) solid 2px; */
+    /* width: 50%; */
+
+}
+
+
+.contact .container .client-contact form div {
+    margin: 1rem;
+    /* padding: 2rem; */
+    border-bottom: var(--secondary) solid 1px;
+}
+
+.contact .container .client-contact form input,
+.contact .container .client-contact form textarea {
+    width: 100%;
+    color: white;
+    padding: 5px;
+    background-color: transparent;
+    outline: none;
+    border: transparent solid 1px;
+    /* padding: 2rem; */
+}
+
+.contact .container .client-contact form input:focus::placeholder,
+.contact .container .client-contact form input:focus{
+    color: var(--secondary);
+}
+
+/* ------------------ */
+/* ------------------------------ */
+
+.contact .contacts {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.contact .contacts .contact-type{
+    padding-top: 5px;
+    color: white;
+
+}
+
+.contact .contacts .our-contact-info {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem auto;
+    /* width: 300px; */
+}
+
+.contact .contacts .our-contact-info .contact-data {
+    color: var(--secondary);
+    text-align: start;
+    word-wrap: break-word;
+}
+
+/* ------------------------------------------------ */
+/* Small */
+@media (min-width: 768px) {
+    .contact .container .client-contact form {
+        width: 100%;
+    }
+
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .contact .container .client-contact form {
+        width: 50%;
+    }
+
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .contact .container .client-contact form {
+        width: 50%;
+
+    }
+
+}

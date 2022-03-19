@@ -15,10 +15,11 @@
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
     <!-- The Main CSS File -->
     <link rel="stylesheet" href="css/main.css">
-    <!-- The Menu Css File -->
-    <link rel="stylesheet" href="css/menu-style.css">
+    <!-- The Reservation Css File -->
+    <link rel="stylesheet" href="css/reservation-style.css">
     <!-- Font Awesome Library -->
     <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/clicks.js"></script>
 </head>
 
 <body>
@@ -61,86 +62,49 @@
     </header>
     <!-- End header -->
 
-    <!-- Start Menu -->
-    <section class="menu">
+    <!-- Start Reservation -->
+    <section class="reservation">
         <div class="container my-3">
-            <h2 class="text-secondary ">Our Favourite Menu</h2>
-            <div class="menu-title">
+            <div class="reservation-title">
+                <h2 class="text-secondary ">Book Your Table</h2>
                 <span></span>
                 <i class="fa-solid fa-mug-hot text-secondary"></i>
                 <span></span>
             </div>
 
-            <div class="menu-items">
-                <div class="menu-item">
-                    <div class="coffee-img"><img src="imgs/item1.png" alt="coffee-cup"></div>
-                    <div class="coffee-desc">
-                        <h4 class="coffee-name text-white">Cafe Late</h4>
-                        <p class="coffee-details text-secondary">espresso,milk,foam</p>
-                    </div>
-                    <h4 class="coffee-price text-secondary">$20.5</h4>
+            <div class="reserv">
+                <div class="left-coffee">
+                    <img src="imgs/Coffee_cup_icon.png" alt="">
                 </div>
-                <div class="menu-item">
-                    <div class="coffee-img"><img src="imgs/item2.png" alt="coffee-cup"></div>
-                    <div class="coffee-desc">
-                        <h4 class="coffee-name text-white">Cafe Late</h4>
-                        <p class="coffee-details text-secondary">espresso,milk,foam</p>
+                <form action="php/reserve.php" method="post">
+                    <div class="name">
+                        <input type="text" placeholder="Name" name="clientname" id="clientname" required>
                     </div>
-                    <h4 class="coffee-price text-secondary">$12.5</h4>
-                </div>
-                
-                <div class="menu-item">
-                    <div class="coffee-img"><img src="imgs/item7.png" alt="coffee-cup"></div>
-                    <div class="coffee-desc">
-                        <h4 class="coffee-name text-white">Black Coffee</h4>
-                        <p class="coffee-details text-secondary">espresso,milk,foam</p>
+                    <div class="email">
+                        <input type="email" placeholder="Email" name="clientnemail" id="clientnemail" required>
                     </div>
-                    <h4 class="coffee-price text-secondary">$14.5</h4>
-                </div>
-                <div class="menu-item">
-                    <div class="coffee-img"><img src="imgs/item2.png" alt="coffee-cup"></div>
-                    <div class="coffee-desc">
-                        <h4 class="coffee-name text-white">Black Coffee</h4>
-                        <p class="coffee-details text-secondary">espresso,milk,foam</p>
+                    <div class="date">
+                        <input type="date" placeholder="Date" name="clientdate" id="clientdate" value="2021/03/16" required>
                     </div>
-                    <h4 class="coffee-price text-secondary">$14.5</h4>
-                </div>
-                <div class="menu-item">
-                    <div class="coffee-img"><img src="imgs/item3.png" alt="coffee-cup"></div>
-                    <div class="coffee-desc">
-                        <h4 class="coffee-name text-white">Mocha</h4>
-                        <p class="coffee-details text-secondary">espresso,milk,foam</p>
+                    <div class="time">
+                        <input type="time" placeholder="Time" value="10:20 AM" name="clienttime" id="clienttime" required>
                     </div>
-                    <h4 class="coffee-price text-secondary">$25.5</h4>
-                </div>
-                <div class="menu-item">
-                    <div class="coffee-img"><img src="imgs/item1.png" alt="coffee-cup"></div>
-                    <div class="coffee-desc">
-                        <h4 class="coffee-name text-white">Mocha</h4>
-                        <p class="coffee-details text-secondary">espresso,milk,foam</p>
+                    <div class="people-number">
+                        <input type="number" placeholder="Persone (under 5)" name="clientnperson" id="clientnperson"
+                            min="1" max="5" required>
                     </div>
-                    <h4 class="coffee-price text-secondary">$15.5</h4>
-                </div>
-                <div class="menu-item">
-                    <div class="coffee-img"><img src="imgs/item7.png" alt="coffee-cup"></div>
-                    <div class="coffee-desc">
-                        <h4 class="coffee-name text-white">Americano</h4>
-                        <p class="coffee-details text-secondary">espresso,milk,foam</p>
+                    <div class="border-0 te">
+                        <div class=" btn-group btn-group-lg border-0" role="group">
+                            <input class="btn bg-warning text-black" type="submit" value="Send">
+                        </div>
+                        <input class="w-auto" type="reset" name="reset" id="reset" value="Reset">
                     </div>
-                    <h4 class="coffee-price text-secondary">$14.5</h4>
-                </div>
-                <div class="menu-item">
-                    <div class="coffee-img"><img src="imgs/item1.png" alt="coffee-cup"></div>
-                    <div class="coffee-desc">
-                        <h4 class="coffee-name text-white">Americano</h4>
-                        <p class="coffee-details text-secondary">espresso,milk,foam</p>
-                    </div>
-                    <h4 class="coffee-price text-secondary">$18.5</h4>
-                </div>
+                </form>
             </div>
         </div>
     </section>
     <!-- End Menu -->
+    <!-- Start Footer  -->
     <footer class="text-white text-center text-lg-start" style="background-color: #925107;">
         <!-- Grid container -->
         <div class="container p-4">
@@ -234,6 +198,8 @@
         </div>
         <!-- Copyright -->
     </footer>
+    <!-- End Footer  -->
+
 </body>
 
 </html>

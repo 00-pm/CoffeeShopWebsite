@@ -1,250 +1,214 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- title -->
-  <title>Mc Cafe</title>
-  <!-- icon -->
-  <link rel="icon" href="imgs/cafe.ico">
+<html lang="en">
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
-  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- The Main CSS File -->
-  <link rel="stylesheet" href="css/main.css">
-  <!-- Font Awesome Library -->
-  <link rel="stylesheet" href="css/all.min.css">
-  <!-- contact us css -->
-  <link rel="stylesheet" href="css/contact-us-page.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title -->
+    <title>Mc Cafe</title>
+    <!-- icon -->
+    <link rel="icon" href="imgs/cafe.ico">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- The Main CSS File -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- The Contact Css File -->
+    <link rel="stylesheet" href="css/contact-style.css">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
 </head>
+
 <body>
-  <header>
-    <nav class="navbar navbar-expand-sm navbar-light ">
-        <div class="container-sm p-3">
-            <a href="index.html"><img src="imgs/McCaflogo.svg" height="40vh"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#colapsednav"
-                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="colapsednav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item px-2">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a href="menu.html" class="nav-link">Menu</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a href="#" class="nav-link">Reserve</a>
-                    </li>
-                    <li class="nav-item px-2 dropdown">
-                        <a class="nav-link dropdown-toggle-split" href="#" id="MoreDropDown"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            More
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
-                            aria-labelledby="MoreDropDown">
-                            <li><a class="dropdown-item" href="testimonial.html">Testimonial</a></li>
-                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
-                            <li><a class="dropdown-item" href="#aboutus">About Us</a></li>
-                        </ul>
-                    </li>
-                </ul>
+    <!-- Start header -->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light ">
+            <div class="container-sm p-3">
+                <a href="index.html"><img src="imgs/McCaflogo.svg" height="40vh"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#colapsednav"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="colapsednav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item px-2">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="menu.html" class="nav-link">Menu</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="reservation.html" class="nav-link">Reserve</a>
+                        </li>
+                        <li class="nav-item px-2 dropdown">
+                            <a class="nav-link dropdown-toggle-split" href="#" id="MoreDropDown"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                                aria-labelledby="MoreDropDown">
+                                <li><a class="dropdown-item" href="testimonial.html">Testimonial</a></li>
+                                <li><a class="dropdown-item" href="contact-us-page.html">Contact Us</a></li>
+                                <li><a class="dropdown-item" href="#aboutus">About Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+
+    <!-- Start Contact -->
+    <section class="contact">
+        <div class="container my-3">
+            <h2 class="text-secondary ">Feel Free To Contact</h2>
+            <div class="contacts">
+                <div class="our-contact-info">
+                    <i class="fa-solid fa-location-dot icon"></i>
+                    <h2 class="contact-type">Address</h2>
+                    <div class="contact-data">Safi, Merrakech-Safi 46000, MA</div>
+                </div>
+                <div class="our-contact-info">
+                    <i class="fa-solid fa-phone"></i>
+                    <h2 class="contact-type">Phone</h2>
+                    <div class="contact-data">+212 6 28 78 79 57</div>
+                </div>
+                <div class="our-contact-info">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h2 class="contact-type">Email</h2>
+                    <div class="contact-data">Mccafe@safi.ma</div>
+                </div>
+            </div>
+
+            <div class="client-contact">
+                <div class="left-coffee">
+                    <img src="imgs/Coffee_cup_icon.png" alt="">
+                </div>
+                <form  action="php/contact.php" method="post">
+                    <div class="name">
+                        <input type="text" placeholder="Name" name="clientname" id="clientname" required>
+                    </div>
+                    <div class="email">
+                        <input type="email" placeholder="Email" name="clientnemail" id="clientnemail" required>
+                    </div>
+
+                    <div class="subject">
+                        <input type="text" placeholder="Subject" name="clientsubject" id="clientsubject" required>
+                    </div>
+                    <div>
+                        <textarea name="clientmessage" id="clientmessage" cols="60" rows="5" placeholder="Message"></textarea>
+                    </div>
+                    <div class="border-0 te">
+                        <div class=" btn-group btn-group-lg border-0" role="group">
+                            <input class="btn bg-warning text-black" type="submit" value="Send">
+                        </div>
+                        <input class="w-auto" type="reset" name="reset" id="reset" value="Reset">
+                    </div>
+                </form>
             </div>
         </div>
-    </nav>
-</header>
-<!--Section: Contact v.2-->
-<section class="mb-4">
+    </section>
+    <!-- End Contact -->
+    <!-- Start Footer  -->
+    <footer class="text-white text-center text-lg-start" style="background-color: #925107;">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4" id="aboutus">About company</h5>
 
-  <!--Section heading-->
-  <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-  <!--Section description-->
-  <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-      a matter of hours to help you.</p>
+                    <p>
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                        voluptatum deleniti atque corrupti.
+                    </p>
 
-  <div class="row">
+                    <p>
+                        Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+                        molestias.
+                    </p>
 
-      <!--Grid column-->
-      <div class="col-md-9 mb-md-0 mb-5">
-          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                    <div class="mt-4">
+                        <!-- Facebook -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <!-- Dribbble -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+                        <!-- Twitter -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+                        <!-- Google + -->
+                        <a type="button" class="btn btn-floating btn-warning btn-lg"><i
+                                class="fab fa-google-plus-g"></i></a>
+                        <!-- Linkedin -->
+                    </div>
+                </div>
+                <!--Grid column-->
 
-              <!--Grid row-->
-              <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
 
-                  <!--Grid column-->
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
-                          <input type="text" id="name" name="name" class="form-control">
-                          <label for="name" class="">Your name</label>
-                      </div>
-                  </div>
-                  <!--Grid column-->
+                    <ul class="fa-ul" style="margin-left: 1.65em;">
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Safi,
+                                Merrakech-Safi 46000,
+                                MA</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-envelope"></i></span><span
+                                class="ms-2">Mccafe@safi.ma</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 212 23 567
+                                88</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 212 34 567
+                                89</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
 
-                  <!--Grid column-->
-                  <div class="col-md-6">
-                      <div class="md-form mb-0">
-                          <input type="text" id="email" name="email" class="form-control">
-                          <label for="email" class="">Your email</label>
-                      </div>
-                  </div>
-                  <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Opening hours</h5>
 
-              </div>
-              <!--Grid row-->
+                    <table class="table text-center text-white">
+                        <tbody class="font-weight-normal">
+                            <tr>
+                                <td>Mon - Thu:</td>
+                                <td>8am - 9pm</td>
+                            </tr>
+                            <tr>
+                                <td>Fri - Sat:</td>
+                                <td>8am - 1am</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday:</td>
+                                <td>9am - 10pm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
 
-              <!--Grid row-->
-              <div class="row">
-                  <div class="col-md-12">
-                      <div class="md-form mb-0">
-                          <input type="text" id="subject" name="subject" class="form-control">
-                          <label for="subject" class="">Subject</label>
-                      </div>
-                  </div>
-              </div>
-              <!--Grid row-->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="index.html">Mc Cafe</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- End Footer  -->
 
-              <!--Grid row-->
-              <div class="row">
-
-                  <!--Grid column-->
-                  <div class="col-md-12">
-
-                      <div class="md-form">
-                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                          <label for="message">Your message</label>
-                      </div>
-
-                  </div>
-              </div>
-              <!--Grid row-->
-
-          </form>
-
-          <div class="text-center text-md-left">
-              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-          </div>
-          <div class="status"></div>
-      </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
-      <div class="col-md-3 text-center">
-          <ul class="list-unstyled mb-0">
-              <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                  <p>San Francisco, CA 94126, USA</p>
-              </li>
-
-              <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                  <p>+ 01 234 567 89</p>
-              </li>
-
-              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                  <p>contact@mdbootstrap.com</p>
-              </li>
-          </ul>
-      </div>
-      <!--Grid column-->
-
-  </div>
-
-</section>
-<!--Section: Contact v.2-->
-<footer class="text-white text-center text-lg-start" style="background-color: #925107;">
-  <!-- Grid container -->
-  <div class="container p-4">
-      <!--Grid row-->
-      <div class="row mt-4">
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-              <h5 class="text-uppercase mb-4" id="aboutus">About company</h5>
-
-              <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                  voluptatum deleniti atque corrupti.
-              </p>
-
-              <p>
-                  Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-                  molestias.
-              </p>
-
-              <div class="mt-4">
-                  <!-- Facebook -->
-                  <a type="button" class="btn btn-floating btn-warning btn-lg"><i
-                          class="fab fa-facebook-f"></i></a>
-                  <!-- Dribbble -->
-                  <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
-                  <!-- Twitter -->
-                  <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
-                  <!-- Google + -->
-                  <a type="button" class="btn btn-floating btn-warning btn-lg"><i
-                          class="fab fa-google-plus-g"></i></a>
-                  <!-- Linkedin -->
-              </div>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-
-              <ul class="fa-ul" style="margin-left: 1.65em;">
-                  <li class="mb-3">
-                      <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Safi, Merrakech-Safi 46000,
-                          MA</span>
-                  </li>
-                  <li class="mb-3">
-                      <span class="fa-li"><i class="fas fa-envelope"></i></span><span
-                          class="ms-2">Mccafe@cafe.com</span>
-                  </li>
-                  <li class="mb-3">
-                      <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 212 23 567
-                          88</span>
-                  </li>
-                  <li class="mb-3">
-                      <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 212 34 567
-                          89</span>
-                  </li>
-              </ul>
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase mb-4">Opening hours</h5>
-
-              <table class="table text-center text-white">
-                  <tbody class="font-weight-normal">
-                      <tr>
-                          <td>Mon - Thu:</td>
-                          <td>8am - 9pm</td>
-                      </tr>
-                      <tr>
-                          <td>Fri - Sat:</td>
-                          <td>8am - 1am</td>
-                      </tr>
-                      <tr>
-                          <td>Sunday:</td>
-                          <td>9am - 10pm</td>
-                      </tr>
-                  </tbody>
-              </table>
-          </div>
-          <!--Grid column-->
-      </div>
-      <!--Grid row-->
-  </div>
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-      <a class="text-white" href="index.html">Mc Cafe</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-</div>
 </body>
+
 </html>
