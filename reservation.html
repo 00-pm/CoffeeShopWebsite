@@ -84,14 +84,22 @@
                         <input type="email" placeholder="Email" name="clientnemail" id="clientnemail" required>
                     </div>
                     <div class="date">
-                        <input type="date" placeholder="Date" name="clientdate" id="clientdate" value="2021/03/16" required>
+                        <input type="date" placeholder="Date" name="clientdate" id="clientdate" value="2021/03/16"
+                            required>
                     </div>
                     <div class="time">
-                        <input type="time" placeholder="Time" value="10:20 AM" name="clienttime" id="clienttime" required>
+                        <input type="time" placeholder="Time" value="10:20 AM" name="clienttime" id="clienttime"
+                            required>
                     </div>
-                    <div class="people-number">
-                        <input type="number" placeholder="Persone (under 5)" name="clientnperson" id="clientnperson"
-                            min="1" max="5" required>
+                    <div class="people-number border-0">
+                        <!-- <input type="number" placeholder="Person (under 5)" name="clientnperson" id="clientnperson" min="1" max="5" required> -->
+                        <select name="clientnperson" id="clientnperson" class="form-select dropdown-menu-dark bg-primary">
+                            <option value="1" selected>One person</option>
+                            <option value="2">Two person</option>
+                            <option value="3">Three person</option>
+                            <option value="4">Four person</option>
+                            <option value="5">Five person</option>
+                        </select>
                     </div>
                     <div class="border-0 te">
                         <div class=" btn-group btn-group-lg border-0" role="group">
@@ -115,13 +123,12 @@
                     <h5 class="text-uppercase mb-4" id="aboutus">About company</h5>
 
                     <p>
-                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                        voluptatum deleniti atque corrupti.
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                        deleniti atque corrupti.
                     </p>
 
                     <p>
-                        Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
-                        molestias.
+                        Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias.
                     </p>
 
                     <div class="mt-4">
@@ -145,7 +152,8 @@
 
                     <ul class="fa-ul" style="margin-left: 1.65em;">
                         <li class="mb-3">
-                            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Safi, Merrakech-Safi 46000,
+                            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Safi,
+                                Merrakech-Safi 46000,
                                 MA</span>
                         </li>
                         <li class="mb-3">

@@ -12,12 +12,14 @@
 * {
     box-sizing: border-box;
 }
+
+
 /* End Glbal Values  */
+
 
 /* Start  reservation  */
 
 .reservation .container {
-
     background-color: rgba(0, 0, 0, 0.50);
     border-radius: 10px;
     padding-top: 30px;
@@ -26,7 +28,6 @@
 
 .reservation .container .reservation-title {
     text-align: center;
-
 }
 
 .reservation .container h2 {
@@ -47,7 +48,10 @@
     height: 1px;
     background-color: var(--bs-primary);
 }
+
+
 /* ------------------------------------- */
+
 .reservation .container .reserv {
     color: white;
     width: 100%;
@@ -67,17 +71,10 @@
     margin-bottom: 2rem;
     /* width: 50%; */
     height: 100%;
-
 }
 
 .reservation .container .reserv .left-coffee img {
     width: 300px;
-}
-
-.reservation .container .reserv form {
-    /* border: rgb(0, 255, 191) solid 2px; */
-    /* width: 50%; */
-
 }
 
 
@@ -97,55 +94,66 @@
     /* padding: 2rem; */
 }
 
-
 .reserv form div input:focus::placeholder,
-.reserv form div input:focus{
+.reserv form div input:focus {
     color: var(--secondary);
 }
 
-
-
-::-webkit-inner-spin-button, ::-webkit-outer-spin-button{
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
     display: none;
 }
 
+
 /* Small */
+
 @media (min-width: 768px) {
     .reservation .container .reserv form {
         width: 100%;
     }
-
 }
 
+
 /* Medium */
+
 @media (min-width: 992px) {
     .reservation .container .reserv form {
         width: 50%;
     }
-
 }
 
+
 /* Large */
+
 @media (min-width: 1200px) {
     .reservation .container .reserv form {
         width: 50%;
     }
-
 }
 
+
 /* ------------------ */
+
+
 /* Hide Calendar Icon */
+
+
 /* input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 0;
     -webkit-appearance: none;
 } */
 
+
 /* input[type="time"]::-webkit-inner-spin-button,
 input[type="time"]::-webkit-calendar-picker-indicator {
     /* color: aliceblue; */
-    /* -webkit-appearance: none; 
+
+
+/* -webkit-appearance: none; 
 }*/
+
+
 /* .reservation .container .reserv  .left-coffee img {
     animation: MoveUpDown 4s linear infinite;
     position: absolute;
